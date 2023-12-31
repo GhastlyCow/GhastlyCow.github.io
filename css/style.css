@@ -46,10 +46,10 @@ body {
 }
 
 .aboutimage {
-  max-width: 60%;
-  max-height: 60%;
-  clip-path: Ellipse(40% 50%);
-  transform: rotate(17deg);
+  max-width: 40%;
+  max-height: 40%;
+  clip-path: Ellipse(36% 50%);
+  transform: rotate(14deg);
 }
 
 .abouttext {
