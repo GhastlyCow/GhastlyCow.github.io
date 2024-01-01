@@ -480,8 +480,15 @@ a:focus {
   transform: translate(-50%, -50%);
 }
 
-#portfolio .portfolio-thumb:hover .portfolio-overlay {
-  opacity: 0.9;
+@media screen and (min-width: 925px) {
+  #portfolio .portfolio-thumb:hover .portfolio-overlay {
+    opacity: 0.9;
+  }
+}
+@media screen and (max-width: 925px) {
+  #portfolio .portfolio-thumb .portfolio-overlay {
+    opacity: 0.6;
+  }
 }
 
 #portfolio .text-center {
