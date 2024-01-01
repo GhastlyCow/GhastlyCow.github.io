@@ -57,7 +57,7 @@ body {
 }
 
 .abimg {
-  display: block;
+  display: none;
   position: center;
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +69,7 @@ body {
 
 @media screen and (min-width: 993px) {
   .aboutimage {
-    display: inline-block;
+    display: block;
     max-width: 40%;
     max-height: 40%;
     clip-path: Ellipse(36% 50%);
