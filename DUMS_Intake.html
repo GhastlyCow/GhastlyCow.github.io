@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <title>FSAE Restrictor + Intake Manifold</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- PRE LOADER -->
+
+    <div class="preloader">
+      <div class="sk-spinner sk-spinner-wordpress">
+        <span class="sk-inner-circle"></span>
+      </div>
+    </div>
+
+    <!-- Navigation section  -->
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">PRANAV GUPTA</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="index.html"><font color="blue">PROJECTS</font></a>
+            </li>
+            <li><a href="Gallery.html">GALLERY</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single Project Section -->
+
+    <section id="single-project">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10 col-sm-12">
+            <h1>FSAE Restrictor + Intake Manifold</h1>
+            <p>
+              Designing a custom Restrictor and Intake Manifold for the Duke
+              University Motorsports 2025 NA CP2 FSAE Car.
+            </p>
+            <!--<a href="#"><i class="fa fa-long-arrow-right"></i> View Website</a>-->
+
+            <div class="centeredimage">
+              <img
+                src="images/dums_intake.png"
+                class="img-responsive"
+                alt="Portfolio"
+              />
+            </div>
+
+            <!-- <div class="col-md-6 col-sm-6">
+                         <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                    </div> -->
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4 col-sm-4">
+              <h3>Skills</h3>
+              <p>
+                SolidWorks <br />ANSYS Fluent <br />
+                ANSYS Discovery
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+              <h3>Timeline</h3>
+              <p>June 2024 - Present</p>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+              <h3>Team Members</h3>
+              <p>
+                Alexander Anderson <br />
+                Alexandra Bergman
+              </p>
+            </div>
+
+            <div class="col-md-12 col-sm-12 text-center">
+              <h3>Defining the Problem</h3>
+            </div>
+            <div class="col-sm-12 col-sm-12 text-left">
+              <p>
+                The Powertrain team at Duke Motorsports decided to transition
+                from a Turbo Yamaha CP2 platform to a NA Yamaha CP2 Platform.
+                Due to this change, I was tasked with designing a brand new
+                rules legal and optimized restrictor and intake manifold. The
+                team settled on a few constraints that I had to follow:
+              </p>
+            </div>
+            <div class="col-sm-12 col-sm-12 text-left">
+              <ul>
+                <ol>
+                  <li style="padding-left: 5px">
+                    To remain rules legal (FSAE Rule IC.1.2) and also to give
+                    Aerodynamics a rear wing bounding box, the intake must lie
+                    in the Tire Surface Envelope.
+                  </li>
+                  <li style="padding-left: 5px">
+                    The designed intake must be easily manufacturable in-house.
+                    It was decided that Intake Manifold parts must be able to be
+                    3D printed on a Bambu labs P1P.
+                  </li>
+                  <li style="padding-left: 5px">
+                    The Intake Manifold Prototypes must have easily
+                    interchangeable runner lengths and plenum volume to allow
+                    for effective dyno testing.
+                  </li>
+                </ol>
+              </ul>
+              <!-- <strong>James Otto ( Project Manager )..</strong> -->
+            </div>
+
+            <div class="col-sm-12 col-sm-12 text-center">
+              <h3>Restrictor Design</h3>
+            </div>
+            <div class="col-sm-12 col-sm-12 text-left">
+              <p>
+                I decided to first tackle the design of the restrictor nozzle
+                for the manifold. In FSAE, all cars are required to have a
+                restrictor with a maximum diameter of 20mm if gas-fueled and
+                19mm if e85-fueled (FSAE Rule IC.2.4.3). <br />
+                After reading a few research papers on the differences between
+                restrictor-nozzles, I settled on optimizing a venturi-nozzle
+                restrictor. I did this by running CFD simulations on
+                venturi-nozzle restrictors with varying converging and diverging
+                angles, 10-18 degrees and 6-14 degrees respectively. The goal
+                was to find the restrictor that optimized both pressure drop and
+                overall length.
+              </p>
+
+              <div class="col-md-6 col-sm-6">
+                <img
+                  src="images/dums_restrictor_1.png"
+                  class="img-responsive"
+                  alt="Portfolio"
+                />
+              </div>
+
+              <div class="col-md-6 col-sm-6">
+                <img
+                  src="images/dums_restrictor_sim.jpg"
+                  class="img-responsive"
+                  alt="Portfolio"
+                />
+              </div>
+
+              <div class="col-sm-12 col-sm-12 text-left"></div>
+              <p>
+                The boundary conditions for this restrictor sim was as follows:
+                <br />
+                Inlet: 101365 Pa (1 atm) Outlet: 0.074 kg/s (This number was
+                found by first using the NASA choked flow equation to yield
+                0.0703 kg/s but did not yield choked flow in simulation, so from
+                there I used that as a baseline and ran CFD simulations until I
+                was able to get an "experimental" value that yielded choke in
+                the restrictor.)
+              </p>
+            </div>
+            <div class="centeredimage">
+              <img
+                src="images/dums_restrictor_2.png"
+                class="img-responsive"
+                alt="Portfolio"
+              />
+            </div>
+
+            <div class="col-md-12 col-sm-12 text-center">
+              <h3>Final Restrictor Design + Future Steps</h3>
+            </div>
+            <div class="leftjustified">
+              I ran ANSYS Fluent CFD simulations on every combination of
+              converging-diverging in the range as described above. After
+              running the simulations. I found that the restrictor with a
+              converging angle of 16 and diverging angle of 6 had the least
+              pressure drop but it was too long, but the restrictor with a
+              converging angle of 16 and diverging angle of 8 yielded similar
+              performance at a much shorter overall length. <br />
+              <br />
+              The next steps with restrictor design will be using the wind
+              tunnel available on campus to experiementally verify the pressure
+              drop and choking mass flow rate.
+              <!-- <strong>James Otto ( Project Manager )..</strong> -->
+            </div>
+
+            <div class="col-md-12 col-sm-12 text-center">
+              <h3>Intake Manifold Design</h3>
+            </div>
+
+            <div class="leftjustified">
+              <p>
+                Next, I moved on to designing the plenum and runners. To find
+                the ideal length of the runners, I both referenced the math from
+                our previous intakes which used hemholtz reasonance, and my own,
+                which used acoustic resonance. After some spreadsheet math, I
+                determined that the ideal runner length (3RD wave tuned) is
+                between 10.2 to 10.35 in. From there, I weighed the 3 different
+                ways to "grab" air from the plenum and move it to the runners.
+              </p>
+              <ul>
+                <ol>
+                  <li style="padding-left: 5px">
+                    Butt-joint esque design: This design is easy to manufacture
+                    and design, but does not efficiently retrieve fast air from
+                    the plenum.
+                  </li>
+                  <li style="padding-left: 5px">
+                    Tapered Runners: This design is only slightly harder to
+                    manufacture than 1, but allows for a larger radius to grab
+                    air from the plenum.
+                  </li>
+                  <li style="padding-left: 5px">
+                    Velocity Stacks/Bellmouths: This design is the hardest to
+                    manufacture, but is able to capture the most high speed air
+                    when compared to the other 2 designs.
+                  </li>
+                </ol>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <img
+                  src="images/dums_intake_simple.jpg"
+                  class="img-responsive"
+                  alt="Simple Intake Design"
+                />
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <img
+                  src="images/dums_intake_taper.jpg"
+                  class="img-responsive"
+                  alt="Tapered Runners Intake Design"
+                />
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <img
+                  src="images/dums_intake_bells.jpg"
+                  class="img-responsive"
+                  alt="Velocity Stacks Intake Design"
+                />
+              </div>
+            </div>
+
+            <!-- <div class="col-sm-12 col-sm-12 text-center">
+              <h3>Reflection</h3>
+            </div> -->
+            <div class="leftjustified">
+              <p>
+                I utilized ANSYS Discovery to optimize all 3 types of
+                plenum+runner designs (Image of CFD simulation below). I found
+                that an optimized intake with velocity stacks outperformed the
+                simple design significantly and the tapered one only slightly.
+                Since the velocity stack intake manifold design is still
+                feasible to manufacture using 3D printing, I decided to move
+                forward with that design.
+              </p>
+            </div>
+
+            <div class="centeredimage">
+              <img
+                src="images/dums_intakemanifold_CFD.png"
+                class="img-responsive"
+                alt="Portfolio"
+              />
+            </div>
+
+            <div class="col-sm-12 col-sm-12 text-center">
+              <h3>Future Steps</h3>
+            </div>
+            <div class="leftjustified">
+              <p>
+                All of my full intake manifold CFD simulations were optimized
+                using a steady-state approach. However, this approach does not
+                fully recreate the actual behavior of the intake manifold. It
+                allowed me to find deadzones and pockets in my plenum designs,
+                but I am currently working on a transient model to simulate the
+                airflow in the intake with the spinning of the crankshaft. I
+                have also split my model into 3 3D printer-friendly parts
+                (restrictor, plenum, runners). I will be 3D printing these to
+                begin initial dyno experiemental verifications of my simulation
+                data.
+              </p>
+            </div>
+            <div class="col-sm-12 col-sm-12 text-center">
+              <h3>Reflection</h3>
+            </div>
+            <div class="leftjustified">
+              <p>
+                This page encompasses most of the restrictor and intake manifold
+                summer design I have been able to accomplish for Duke
+                Motorsports. Coming into this project, I had zero experience
+                with ANSYS and CFD and even how to go about designing an Intake
+                Manifold. Thanks to the mentorship of my team leads and the many
+                research papers available online, my knoweldge on CFD, Intake
+                Manifolds, and overall Powertrain Design skyrocketed over the
+                last couple months. As I go back to college, I am excited to
+                continue the design process and finally get to see the physical
+                model of something I have been designing and simulating all
+                summer!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 col-sm-12 text-center">
+        <a href="AudreyII.html"
+          >Next Project <i class="fa fa-long-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer Section
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-3 col-sm-3">
+                    <i class="fa fa-magnet"></i>
+               </div>
+
+               <div class="col-md-4 col-sm-4">
+                    <p>124 Market Street, Suite 3570 San Francisco, CA 3042 United States</p>
+               </div>
+
+               <div class="col-md-offset-1 col-md-4 col-sm-offset-1 col-sm-3">
+                    <p><a href="mailto:youremail@gmail.com">hello@yourstudio.co</a></p>
+                    <p>(+01) 2048937 / 02 203403</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <div class="footer-copyright">
+                         <p>© 2016 Magnet Studio | All Rights Reserved.  Distributed By: <a class="" href="https://htmltemplates.co" target="_blank">Free HTML Templates</a></p>
+                    </div>
+               </div>
+
+               <div class="col-md-6 col-sm-6">
+                    <ul class="social-icon">
+                         <li><a href="#" class="fa fa-facebook"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer> -->
+
+    <!-- SCRIPTS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
